@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Shield, TrendingUp, Users, CheckCircle, Quote, Clock, Award } from 'lucide-react';
+import { ArrowRight, Shield, TrendingUp, CheckCircle, Quote, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // --- Hero Section ---
