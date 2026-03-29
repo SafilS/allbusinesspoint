@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Shield, CheckCircle, Package, Wrench, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
