@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Shield, TrendingUp, Users, CheckCircle, Quote, Clock, Award } from 'lucide-react';
+import { ArrowRight, Shield, TrendingUp, CheckCircle, Quote, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // --- Hero Section ---
@@ -13,7 +12,7 @@ const Hero = () => (
         className="w-full h-full object-cover object-center grayscale opacity-30"
       />
     </div>
-    
+
     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col justify-center items-start pt-20">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }} className="max-w-4xl border-l-[3px] border-accent pl-8 py-2">
         <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 text-white tracking-wide">
@@ -24,7 +23,7 @@ const Hero = () => (
           Premium corporate consultancy solutions tailored to scale your enterprise globally, rooted in Coimbatore.
         </p>
       </motion.div>
-      
+
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }} className="flex flex-col sm:flex-row items-center gap-6 pl-8">
         <Link to="/free-consultation" className="w-full sm:w-auto px-10 py-4 bg-accent text-primary font-bold text-sm tracking-widest uppercase transition-colors hover:bg-white flex items-center justify-center gap-3">
           Get Consultation <ArrowRight size={18} />
@@ -74,13 +73,13 @@ const ServicesGrid = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
             <span className="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">Our Expertise</span>
-            <h2 className="font-heading text-4xl md:text-5xl font-normal text-primary leading-tight">Delivering High-End <br/>Business Solutions.</h2>
+            <h2 className="font-heading text-4xl md:text-5xl font-normal text-primary leading-tight">Delivering High-End <br />Business Solutions.</h2>
           </div>
           <p className="text-textLight text-lg max-w-md font-light leading-relaxed border-l border-borderLight pl-6 hidden md:block">
             We partner with industry leaders to unlock their true potential through data-driven strategies and meticulous execution.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-borderLight">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-10 hover:bg-bgOffWhite transition-colors duration-500 group relative">
@@ -116,7 +115,7 @@ const AboutPreview = () => (
               Our multidisciplinary framework combines rigorous industry knowledge with innovative execution, ensuring our clients maintain competitive advantage.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 pt-10 border-t border-white/20">
             {["Experienced Leadership", "Punctual Delivery", "Unwavering Reliability", "Client-Centric Approach"].map((feature, i) => (
               <div key={i} className="flex items-center gap-4">
@@ -125,7 +124,7 @@ const AboutPreview = () => (
               </div>
             ))}
           </div>
-          
+
           <div className="pt-6">
             <Link to="/about" className="inline-block px-10 py-4 border border-accent text-accent font-semibold text-sm tracking-widest uppercase hover:bg-accent hover:text-primary transition-colors">
               Read Our Story
@@ -157,7 +156,7 @@ const Testimonials = () => {
           <span className="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">Endorsements</span>
           <h2 className="font-heading text-4xl md:text-5xl font-normal text-primary">Trusted by Visionaries</h2>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {reviews.map((review, index) => (
             <div key={index} className="flex flex-col bg-white p-12 border-subtle">

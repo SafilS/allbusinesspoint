@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Shield, CheckCircle, Package, Wrench, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -57,7 +56,7 @@ const Services = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl border-l border-accent pl-8">
             <span className="text-accent font-bold tracking-widest uppercase text-xs mb-6 block">Capabilities</span>
             <h1 className="font-heading text-5xl md:text-6xl font-normal leading-tight mb-8">
-              Strategic Solutions for <br/>Complex Markets.
+              Strategic Solutions for <br />Complex Markets.
             </h1>
             <p className="text-xl text-gray-400 font-light leading-relaxed">
               Tailored services designed to optimize performance, manage risk, and accelerate growth across core business sectors.
@@ -77,7 +76,7 @@ const Services = () => {
                   <div className="absolute inset-x-0 bottom-0 h-1 bg-accent/80" />
                 </div>
               </div>
-              
+
               <div className={`w-full lg:w-1/2 flex flex-col justify-center ${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
                 <div className="mb-10 p-4 border border-borderLight inline-block w-max">
                   {service.icon}
@@ -85,7 +84,7 @@ const Services = () => {
                 <h2 className="font-heading text-3xl md:text-4xl font-normal text-primary mb-8">{service.title}</h2>
                 <div className="w-8 h-px bg-accent mb-8" />
                 <p className="text-textLight text-lg font-light leading-relaxed mb-10">{service.desc}</p>
-                
+
                 <h4 className="font-bold text-xs tracking-widest uppercase text-primary mb-6">Key Deliverables</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
                   {service.benefits.map((benefit, i) => (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Briefcase } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -27,9 +27,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 border-b ${
-        isScrolled ? 'bg-white border-borderLight py-4' : 'bg-white/95 backdrop-blur-sm border-transparent py-6'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-500 border-b ${isScrolled ? 'bg-white border-borderLight py-4' : 'bg-white/95 backdrop-blur-sm border-transparent py-6'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -50,9 +49,8 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-sm tracking-wide transition-colors ${
-                    location.pathname === link.path ? 'text-accent font-semibold border-b border-accent pb-1' : 'text-textLight hover:text-primary font-medium'
-                  }`}
+                  className={`text-sm tracking-wide transition-colors ${location.pathname === link.path ? 'text-accent font-semibold border-b border-accent pb-1' : 'text-textLight hover:text-primary font-medium'
+                    }`}
                 >
                   {link.name.toUpperCase()}
                 </Link>
@@ -92,11 +90,10 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`block text-lg tracking-wide ${
-                    location.pathname === link.path
+                  className={`block text-lg tracking-wide ${location.pathname === link.path
                       ? 'text-accent font-semibold'
                       : 'text-textLight hover:text-primary'
-                  }`}
+                    }`}
                 >
                   {link.name.toUpperCase()}
                 </Link>

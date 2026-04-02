@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -24,7 +23,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <div>
-              <h2 className="font-heading text-4xl font-normal text-primary mb-10 leading-tight">Navigating Modern <br/>Business Challenges</h2>
+              <h2 className="font-heading text-4xl font-normal text-primary mb-10 leading-tight">Navigating Modern <br />Business Challenges</h2>
               <div className="w-12 h-px bg-accent mb-8" />
               <p className="text-textLight text-lg font-light leading-relaxed mb-6">
                 Founded in Coimbatore, Any Business Point Global Consultancy Services has grown from a specialized advisory practice into a full-scale corporate consulting firm. We actively partner with organizations to navigate volatile markets, streamline operations, and realize unseen potential.
