@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="text-sm font-light pt-4 border-t border-white/10">
                 <span className="text-white block mb-1 tracking-widest uppercase text-[10px]">Contact</span>
-                +91 (Consultancy Phone)<br />
+                +91 9789378657<br />
                 contact@anybusinesspoint.com
               </li>
               <li className="text-sm font-light pt-4 border-t border-white/10">
